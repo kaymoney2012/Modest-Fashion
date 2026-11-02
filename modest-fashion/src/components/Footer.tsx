@@ -17,7 +17,7 @@ const footerLinks = [
 export default function Footer() {
   // Replace with your WhatsApp number, including country code.
   // Example format for Nigeria: 2348012345678
-  const whatsappNumber = "";
+  const whatsappNumber = "2348083625364";
 
   const whatsappLink = whatsappNumber
     ? `https://wa.me/${whatsappNumber}`
@@ -96,7 +96,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/profile.php?id=61596320272955"
               target="_blank"
               rel="noreferrer"
               aria-label="Facebook"

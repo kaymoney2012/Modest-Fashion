@@ -62,9 +62,6 @@ export default function Home() {
         <div className="absolute inset-0 bg-linear-to-r from-black/90 via-black/60 to-black/10" />
 
         <div className="relative mx-auto w-full max-w-7xl px-6 py-24 sm:px-10">
-          <p className="mb-6 text-xs font-medium uppercase tracking-[0.4em] text-[#d4ad70]">
-            THE ART OF DRESSING WELL
-          </p>
 
           <h1 className="max-w-3xl font-serif text-5xl leading-tight text-white sm:text-6xl lg:text-8xl">
             Elegance in
@@ -89,7 +86,7 @@ export default function Home() {
 
             <Link
               to="/contact"
-              className="inline-flex items-center gap-3 border border-white/50 px-7 py-4 text-xs font-semibold tracking-[0.15em] text-white transition hover:border-[#c49a55] hover:text-[#d4ad70]"
+              className="inline-flex items-center gap-3 border border-white/50 px-7 py-4 text-xs font-semibold tracking-[0.15em] text-white transition hover:bg-[#c49a55] hover:text-[#d4ad70]"
             >
               CONTACT US
               <ArrowUpRight size={17} />
@@ -284,7 +281,7 @@ export default function Home() {
       </section>
 
       {/* Final call to action */}
-      <section className="bg-[#111111] px-6 py-20 text-center text-white sm:px-10 md:py-24">
+      <section className="bg-[#111111] px-6 py-20 text-center border-b-2 border-[#d4ad70] text-white sm:px-10 md:py-24">
         <p className="text-xs tracking-[0.35em] text-[#d4ad70]">
           YOUR STYLE, YOUR STORY
         </p>

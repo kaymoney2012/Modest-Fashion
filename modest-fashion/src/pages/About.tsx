@@ -259,7 +259,7 @@ export default function About() {
 
         <Link
           to="/contact"
-          className="mt-8 inline-flex items-center gap-3 bg-[#111111] px-8 py-4 text-xs font-semibold tracking-[0.2em] text-white transition hover:bg-amber-800"
+          className="mt-8 text-[#ffffff] inline-flex items-center gap-3 bg-[#111111] px-8 py-4 text-xs font-semibold tracking-[0.2em] transition hover:bg-amber-800"
         >
           CONTACT US
           <ArrowRight size={17} />

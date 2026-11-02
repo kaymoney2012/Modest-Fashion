@@ -19,7 +19,7 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
   // Replace with your actual WhatsApp number, including country code.
-  const whatsappNumber = "";
+  const whatsappNumber = "2348083625364";
 
   const handleChange = (
     event: React.ChangeEvent<
@@ -107,7 +107,7 @@ export default function Contact() {
               <div>
                 <h3 className="font-semibold">Email</h3>
                 <p className="mt-1 text-sm text-stone-500">
-                  Add your business email address here.
+                  modestfashion767@gmail.com
                 </p>
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function Contact() {
               <div>
                 <h3 className="font-semibold">Phone</h3>
                 <p className="mt-1 text-sm text-stone-500">
-                  Add your business phone number here.
+                  08083625364
                 </p>
               </div>
             </div>
@@ -291,11 +291,7 @@ export default function Contact() {
               </p>
             )}
 
-            <p className="text-xs leading-6 text-stone-500">
-              Submitting this form opens WhatsApp with your message
-              prepared. It does not send an email or save the enquiry
-              to a database.
-            </p>
+
           </form>
         </div>
       </section>

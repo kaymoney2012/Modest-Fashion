@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import Logo from "../assets/modest-fashion-logo.png"
 
 const navigation = [
   { name: "Home", path: "/" },
@@ -23,7 +24,7 @@ export default function Navbar() {
           className="flex items-center gap-3"
         >
           <div className="flex h-11 w-11 items-center justify-center border border-[#c49a55] text-lg font-serif text-[#c49a55]">
-            MF
+            <img src={Logo} alt="" />
           </div>
 
           <div>
