@@ -1,6 +1,14 @@
-
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
+import Formal from "../../public/Formal.jpg";
+import Formal2 from "../../public/Formal2.jpg";
+import Formal3 from "../../public/Formal3.jpg";
+import Native from "../../public/Native.jpg";
+import Native2 from "../../public/Native2.jpg";
+import Native3 from "../../public/Native3.jpg";
+import Classic from "../../public/Classic.jpg";
+import Shirts from "../../public/Shirts.jpg";
+import Shirts2 from "../../public/Shirts2.jpg";
 
 const categories = [
   "All",
@@ -16,57 +24,55 @@ const works = [
     id: 1,
     name: "The Executive Suit",
     category: "Suits",
-    image:
-      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=900&q=85",
+    image: Formal,
   },
   {
     id: 2,
     name: "Modern Gentleman",
     category: "Suits",
-    image:
-      "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=900&q=85",
+    image: Formal3,
   },
   {
     id: 3,
     name: "African Elegance",
     category: "Native Wear",
-    image:
-      "https://images.unsplash.com/photo-1506629905607-d9d4c8c2d5b5?auto=format&fit=crop&w=900&q=85",
+    image: Native,
   },
   {
     id: 4,
     name: "Royal Agbada",
     category: "Agbada",
-    image:
-      "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=85",
+    image: Native3,
   },
   {
     id: 5,
     name: "The Classic Shirt",
     category: "Shirts",
-    image:
-      "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=85",
+    image: Shirts,
   },
   {
     id: 6,
     name: "Everyday Sophistication",
     category: "Casual Wear",
-    image:
-      "https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=900&q=85",
+    image: Classic,
   },
   {
     id: 7,
     name: "Evening Classic",
     category: "Suits",
-    image:
-      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=85",
+    image: Formal2,
   },
   {
     id: 8,
     name: "Contemporary Style",
     category: "Native Wear",
-    image:
-      "https://images.unsplash.com/photo-1520975958225-9e0c9d3b2f21?auto=format&fit=crop&w=900&q=85",
+    image: Native2,
+  },
+    {
+    id: 9,
+    name: "Elegant Shirt Design",
+    category: "Shirts",
+    image: Shirts2,
   },
 ];
 
@@ -86,13 +92,11 @@ export default function OurWorks() {
           OUR CREATIVE COLLECTION
         </p>
 
-        <h1 className="mt-5 font-serif text-5xl sm:text-7xl">
-          Our Works
-        </h1>
+        <h1 className="mt-5 font-serif text-5xl sm:text-7xl">Our Works</h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-stone-300 sm:text-base">
-          Explore our collection of menswear designs, where classic
-          tailoring meets contemporary style and African elegance.
+          Explore our collection of menswear designs, where classic tailoring
+          meets contemporary style and African elegance.
         </p>
       </section>
 
@@ -145,9 +149,7 @@ export default function OurWorks() {
                     {work.category.toUpperCase()}
                   </p>
 
-                  <h2 className="mt-2 font-serif text-xl">
-                    {work.name}
-                  </h2>
+                  <h2 className="mt-2 font-serif text-xl">{work.name}</h2>
                 </div>
 
                 <span className="mt-1 text-xs text-stone-400">
@@ -182,7 +184,7 @@ export default function OurWorks() {
 
         <a
           href="/contact"
-          className="mt-8 inline-block bg-[#111111] px-8 py-4 text-xs font-semibold tracking-[0.2em] text-white transition hover:bg-amber-800"
+          className="mt-8 inline-block border-2 border-black px-8 py-4 text-xs font-semibold tracking-[0.2em] text-white transition hover:bg-amber-800"
         >
           MAKE AN ENQUIRY
         </a>

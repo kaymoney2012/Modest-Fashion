@@ -1,5 +1,10 @@
 
 import { Link } from "react-router-dom";
+import Hero2 from "../../public/hero2.jpg"
+import Hero1 from "../../public/hero1.jpg"
+import Formal from "../../public/Formal.jpg"
+import Native from "../../public/Native.jpg"
+import Classic from "../../public/Classic.jpg"
 import {
   ArrowRight,
   ArrowUpRight,
@@ -13,20 +18,17 @@ const featuredWorks = [
   {
     name: "The Executive Suit",
     category: "FORMAL WEAR",
-    image:
-      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=85",
+    image: Formal,
   },
   {
     name: "Modern Native Wear",
     category: "AFRICAN ELEGANCE",
-    image:
-      "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=800&q=85",
+    image: Native,
   },
   {
     name: "The Classic Collection",
     category: "TIMELESS STYLE",
-    image:
-      "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=800&q=85",
+    image: Classic,
   },
 ];
 
@@ -54,7 +56,7 @@ export default function Home() {
       {/* Hero section */}
       <section className="relative flex min-h-155 items-center overflow-hidden bg-[#171614] sm:min-h-175">
         <img
-          src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=2000&q=90"
+          src={Hero1}
           alt="Elegant modern menswear"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
@@ -131,7 +133,7 @@ export default function Home() {
 
         <div className="relative mx-auto w-full max-w-lg">
           <img
-            src="https://images.unsplash.com/photo-1592878904946-b3cd8ae243d0?auto=format&fit=crop&w=1000&q=85"
+            src={Hero2}
             alt="Classic tailored menswear"
             className="aspect-4/5 w-full object-cover"
             loading="lazy"

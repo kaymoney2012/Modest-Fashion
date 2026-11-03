@@ -9,16 +9,6 @@ import {
   Star,
 } from "lucide-react";
 
-const testimonials = [
-  {
-    name: "David O.",
-    text: "I appreciate the attention to detail and the quality of the finishing. The entire experience was professional.",
-  },
-  {
-    name: "Michael A.",
-    text: "The design matched what I had in mind. I was impressed by the care taken with the details.",
-  },
-];
 
 export default function About() {
   return (
@@ -151,7 +141,7 @@ export default function About() {
       </section>
 
       {/* Our values */}
-      <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 md:py-24">
+      <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 md:py-24 border-b-2 border-x-amber-950">
         <div className="text-center">
           <p className="text-xs tracking-[0.35em] text-amber-800">
             THE MODEST STANDARD
@@ -196,70 +186,26 @@ export default function About() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="bg-[#f0ece3] px-6 py-20 sm:px-10 md:py-24">
-        <div className="mx-auto max-w-7xl">
-          <div className="text-center">
-            <p className="text-xs tracking-[0.35em] text-amber-800">
-              CUSTOMER EXPERIENCES
-            </p>
-
-            <h2 className="mt-4 font-serif text-4xl sm:text-5xl">
-              What Our Customers Say
-            </h2>
-          </div>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
-            {testimonials.map((testimonial) => (
-              <article
-                key={testimonial.name}
-                className="border border-stone-300/70 bg-[#faf8f3] p-8 sm:p-10"
-              >
-                <div className="flex gap-1 text-[#c49a55]">
-                  {Array.from({ length: 5 }, (_, index) => (
-                    <Star
-                      key={index}
-                      size={15}
-                      fill="currentColor"
-                    />
-                  ))}
-                </div>
-
-                <p className="mt-6 font-serif text-xl leading-8 text-stone-800">
-                  “{testimonial.text}”
-                </p>
-
-                <p className="mt-7 text-sm font-semibold">
-                  {testimonial.name}
-                </p>
-
-                <p className="mt-1 text-[10px] tracking-[0.2em] text-amber-800">
-                  CUSTOMER
-                </p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* Contact call to action */}
-      <section className="px-6 py-20 text-center sm:px-10 md:py-24">
+      <section className="px-6 py-20 text-center sm:px-10 md:py-24 bg-black">
         <p className="text-xs tracking-[0.35em] text-amber-800">
           LET'S WORK TOGETHER
         </p>
 
-        <h2 className="mx-auto mt-5 max-w-2xl font-serif text-4xl leading-tight sm:text-5xl">
+        <h2 className="mx-auto mt-5 max-w-2xl font-serif text-4xl text-yellow-600 leading-tight sm:text-5xl">
           Your Next Favourite Outfit Starts Here.
         </h2>
 
-        <p className="mx-auto mt-5 max-w-lg text-sm leading-7 text-stone-600">
+        <p className="mx-auto mt-5 max-w-lg text-sm leading-7 text-white/80 sm:text-base">
           Have a design in mind? Let's discuss your preferences and
           create a look that feels uniquely yours.
         </p>
 
         <Link
           to="/contact"
-          className="mt-8 text-[#ffffff] inline-flex items-center gap-3 bg-[#111111] px-8 py-4 text-xs font-semibold tracking-[0.2em] transition hover:bg-amber-800"
+          className="mt-8 text-white font-semibold inline-flex items-center gap-3 border-2 bg-white border-amber-800 px-8 py-4 text-xs tracking-[0.2em] transition transform-cpu hover:bg-amber-800"
         >
           CONTACT US
           <ArrowRight size={17} />
